@@ -44,16 +44,28 @@
                     <option value="4">4</option>
                     <option value="5">5</option>
                 </select>
-                <!-- pulsante gioca -->
-                <button class="btn btn-primary mt-2 mb-4">Gioca</button>
+                <!-- pulsanti -->
+                <div class="row justify-content-around">
+                    <!-- pulsante gioca -->
+                    <div class="col-1">
+                        <button id="gioca" class="btn btn-primary mt-2 mb-4">Gioca</button>
+                    </div>
+                    <!-- pulsante refresh -->
+                    <div class="col-1">
+                        <button id="refresh" class="btn btn-danger mt-2 mb-4">Refresh</button>
+                    </div>
+                </div>
                 <!-- risultati -->
                 <div class="d-flex justify-content-around align-items-center">
                     <div>
-                        <h2>TU</h2>
+                        <h2 id="tu">TU</h2>
                     </div>
                     <div>
-                        <h2>CPU</h2>
+                        <h2 id="cpu">CPU</h2>
                     </div>
+                </div>
+                <div id="result" class="text-center">
+
                 </div>
             </div>
         </div>
