@@ -68,10 +68,4 @@ buttonRefresh.addEventListener('click', function(){
 })
 
 
-// 
-// SECONDO ESERCIZIO: PARI E DISPARI
-// 
-
-
-
 
