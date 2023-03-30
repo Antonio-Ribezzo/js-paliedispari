@@ -12,7 +12,16 @@ Secondo esercizio:
 function numeroRandomico(min, max){
 	return Math.floor(Math.random() * max) + min;//da min a max
 }
-// console.log(numeroRandomico(1,5))
+
+//scrivo una funzione che mi dica se la somma di due numeri e pari o dispari
+function funPariDispari(num1, num2){
+    let sum = num1 + num2
+    if(sum % 2 == 0){
+        return true // è pari
+    } else{
+        return false // è dispari
+    }
+}
 
 //assegno ad una costante il pulsante
 let button = document.querySelector('button') 
@@ -27,10 +36,20 @@ button.addEventListener('click', function(){
     console.log(dispari)
 
     //assegno ad una variabile la scelta del numero da parte dell'utente tramite la select
-    let sceltaNumero = parseInt(document.querySelector("#sceltaNumero").value)
-    console.log(sceltaNumero)
+    let numeroUtente = parseInt(document.querySelector("#sceltaNumero").value)
+    console.log(numeroUtente)
 
     //assegno ad una variabile il numero della cpu
     const numeroCpu = numeroRandomico(1,5)
     console.log(numeroCpu)
+
+    //assegno la somma dei due numeri ad una variabile
+    let somma = numeroUtente + numeroCpu
+    console.log (somma)
+
+    if(pari == funPariDispari(numeroUtente, numeroCpu)){
+        console.log('hai vinto!')
+    } else {
+        console.log('non hai vinto!')
+    }
 })
