@@ -3,22 +3,8 @@ Primo esercizio:
     - Palidroma
         - Chiedere all’utente di inserire una parola. 
         - Creare una funzione per capire se la parola inserita è palindroma.
-Secondo esercizio:
-    - Pari e Dispari
-        - L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. 
-        - Genero un numero random (sempre da 1 a 5) per il computer (usando una funzione). 
-        - Sommo i due numeri. 
-        - Stabilisco se la somma dei due numeri è pari o dispari (usando una funzione).
-        - Dichiaro chi ha vinto.
 */
-// 
-// PRIMO ESERCIZIO: PALINDROMA
-// 
 
-// chiedo all'utente di digitare una parola tramite il prompt
-// let parola1 = prompt('Digita una parola')
-// // stampo in console la parola digitata
-// console.log(parola1)
 
 // creo la mia funzione che mi dirà se la parola inserita è palindroma oppure no
 function findPalindrome(parola){
